@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ExerciseTracker
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/exercise-tracker
+    username: sorsix
+    password: sorsix
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
