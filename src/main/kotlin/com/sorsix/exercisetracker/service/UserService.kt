@@ -15,10 +15,6 @@ class UserService(
             ?: throw RuntimeException("User with id $id not found")
     }
 
-    fun listAll(): List<User> {
-        return userRepository.findAll()
-    }
-
     fun addUser(username: String): User {
         return try {
             userRepository.save(User(username = username))
